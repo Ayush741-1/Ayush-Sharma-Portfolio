@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Dancing+Script&family=Kalam&family=Lobster+Two:wght@700&family=Pacifico&family=Patua+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden !important;
+}
+
+
+body {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.project-container, .skill-container {
+  position: relative;
+  z-index: 1;
+}
+
+.head{
+  font-family: 'Patua One', cursive;
+  letter-spacing: 3.5px;
+  font-weight: bolder;
+}
+
+
+
+/* navbar */
+.navbar-brand{
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 4px;
+  font-style: italic;
+  background-image: linear-gradient(to right, #b499e6, #d1a2de, #e4afd7, #efbed5, #f4cfd8, #f5cad3, #f6c4ce, #f7bfc9, #f4a1bd, #eb84b9, #db67bb, #c34ec3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#navbar {
+  font-family:  cursive;
+  font-weight: 700;
+  margin: 0px 150px;
+  max-width: 100%;
+}
+
+.nav-item{
+  margin: 0px 15px;
+}
+
+/* header */
+.name-text {
+  margin-top: 5rem !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
+}
+
+.name-color {
+  color: rgb(180, 153, 230);
+}
+
+#coder-pic {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* project */
+.project-container {
+  padding: 20px;
+}
+
+
+.card {
+  overflow: hidden;
+}
+
+.project-img-section{
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.project-img {
+  transition: transform 0.3s;
+  height: 200px;
+  width: 1500px;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+/* skills */
+
+.image-box {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box img{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.image-box:hover {
+  transform: scale(1.1);
+}
+
+.skill-container {
+  height: 100vh;
+}
+
+/* contact */
+
+.contact-container{
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#hire-me-pic{
+  position: relative;
+  animation: moveUpDown 2s infinite alternate;
+  /* max-width: 100%; */
+
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/* footer */
+.footer-img{
+  /* border: 1px solid whitesmoke; */
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  transition: .5s;
+  max-width: 100%;
+}
+
+.footer-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 70%;
+  background: #ffffff;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.footer-img:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.footer-img:hover {
+  color: #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+  transform: scale(1.10);
+  /* border-radius: 70%; */
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="index.js" defer></script>
+    <title>Ayush.Sharma</title>
+</head>
+<body>
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" id="home" data-bs-theme="dark">
+        <div class="container-fluid" id="navbar">
+            <a class="navbar-brand" href="#home">
+                <img src="logo.png" alt="Logo" width="50" height="44" class="d-inline-flex align-text-center">
+                <span>Ayush.Sharma</span>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+            <div class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="aboutLink">About</a>
+                      </li>
+                      <!-- Custom modal -->
+                      <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                          <div class="modal-content text-light">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="aboutModalLabel">About</h1>
+                              <button type="button" class="btn-close" data-bs-target="#aboutModal" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              
+                              <p>"Hello! Thank you for visiting my portfolio. This webpage was created using HTML, CSS, JavaScript, Bootstrap, and Email.js. It showcases my skills, projects, and experiences.</p>
+                              
+                              <p>HTML provides the structure, CSS adds style, and JavaScript makes the webpage interactive. Bootstrap ensures a responsive and visually appealing design.</p>
+                              
+                              <p>You can explore my projects, check out my skills, and contact me using the contact form powered by Email.js.</p>
+                              
+                              <p>Thank you again for visiting! I would greatly appreciate it if you could take a moment to review my portfolio and provide any feedback. Your input is valuable to me.</p>
+
+                              <p>"Feel free to get in touch."</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/Ayush741-1">Github</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+<!-- header-section -->
+<div class="container-fluid text-light text-center">
+    <div class="py-5">
+      <div class="row ">
+        <div class="col-md-6 name-text">
+          <p>Hi, My Name is <span class="name-color">Ayush</span></p>
+          <p>and I am a passionate <span class="name-color" id="element"></span></p>
+          <a href="Resume.pdf" target="_blank" class="btn btn-outline-light">View Resume</a>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="coder-pic.png" id="coder-pic" width="555" height="370" alt="coder-pic">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+  <!-- Projects -->
+  <div class="project-container p-4 text-light mt-4">
+    <div class="container">
+      <a class=" link-underline-danger"><h2  class="head text-center text-light ">Projects</h2></a>
+      <div class="row project-img-section mt-4">
+        <div class="col-md-6 mt-2">
+          <div class="card h-100">
+            <img src="fingerprint.png" class="card-img-top project-img" alt="Fingerprint">
+            <div class="card-body">
+              <h5 class="card-title">Online Fingerprint Voting System</h5>
+              <p class="card-text">A secure online voting system using fingerprint authentication to ensure the integrity of the voting process.</p>
+              <a href="https://ayush741-1.github.io/Fingerprint-voting-poll/" target="_blank" class="btn btn-dark">View Project</a>
+              <a href="https://github.com/Ayush741-1/Fingerprint-Voting-System" target="_blank" class="btn btn-outline-dark">Go To Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-2">
+          <div class="card h-100">
+            <img src="stickhero.jpeg" class="img-fluid card-img-top project-img" alt="Tic Tac Toe">
+            <div class="card-body">
+              <h5 class="card-title">Stick-Hero-Game</h5>
+              <p class="card-text">A fun and engaging game where players build bridges to navigate a stick hero through various levels.</p>
+              <a href="https://ayush741-1.github.io/14.Stick-Hero-game/" target="_blank" class="img-fluid btn btn-dark">View Project</a>
+              <a href="https://github.com/Ayush741-1/14.Stick-Hero-game" target="_blank" class="btn btn-outline-dark">Go To Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="card h-100">
+            <img src="WeatherApp1.png" class="img-fluid card-img-top project-img" alt="WeatherApp">
+            <div class="card-body">
+              <h5 class="card-title">Weather App </h5>
+              <p class="card-text">A real-time weather application providing accurate forecasts and weather conditions for different locations.</p>
+              <a href="https://ayush741-1.github.io/Weather-forecast-App" target="_blank" class="img-fluid btn btn-dark">View Project</a>
+              <a href="https://github.com/Ayush741-1/Weather-App" target="_blank" class="btn btn-outline-dark">Go To Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="card h-100">
+            <img src="self.png" class="card-img-top project-img" alt="Portfolio">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio</h5>
+              <p class="card-text">A personal portfolio showcasing my skills, projects, and experiences in the field of software development.</p>
+              <a href="#home" target="_blank" class="btn btn-dark">View Project</a>
+              <a href="https://github.com/Star-boy11/Personal-Portfolio" target="_blank" class="btn btn-outline-dark">Go To Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+      
+
+ <!-- skills -->
+    <div class="container">
+      <div class="skills mt-5 container-fluid">
+        <!-- Content goes here -->
+        <a class="link-underline-danger"><h2 class="text-center text-light mb-4 head">Skills</h2></a>
+        <p style="font-family: cursive;" class="text-center text-light mt-3 mb-3 fw-bold">I am a Computer Science student graduated in the year 2025. I am a self-taught programmer aspiring to be a Software developer.</p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 fw-bold icon-text mt-5">
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="html-5.png" class="rounded img-fluid mt-3" alt="HTML">
+            </div>
+            <p class="text-light mt-2 text-center">HTML</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="css.png" class="rounded img-fluid mt-3" alt="CSS">
+            </div>
+            <p class="text-light mt-2 text-center">CSS</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="Azure.png" class="rounded img-fluid mt-3" alt="Azure">
+            </div>
+            <p class="text-light mt-2 text-center">Azure</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="aws.png" class="rounded img-fluid mt-3" alt="AWS">
+            </div>
+            <p class="text-light mt-2 text-center">AWS</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="js.png" class="rounded img-fluid mt-3" alt="JavaScript">
+            </div>
+            <p class="text-light mt-2 text-center">JavaScript</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="java.png" class="rounded img-fluid mt-3" alt="Java">
+            </div>
+            <p class="text-light mt-2 text-center">Java</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="python.png" class="rounded img-fluid mt-3" alt="Python">
+            </div>
+            <p class="text-light mt-2 text-center">Python</p>
+          </div>
+        <div class="text-center">
+          <div class="image-box mx-4">
+            <img src="mysql.png" class="rounded img-fluid mt-3" alt="MySQL">
+          </div>
+          <p class="text-light mt-2 text-center">MySQL</p>
+        </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="github.png" class="rounded img-fluid mt-3" alt="GitHub">
+            </div>
+            <p class="text-light mt-2 text-center">GitHub</p>
+          </div>
+          <div class="text-center">
+            <div class="image-box mx-4">
+              <img src="vscode.png" class="rounded img-fluid mt-3" alt="VS Code">
+            </div>
+            <p class="text-light mt-2 text-center">VS Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+  <!-- Contact -->
+  <div class="contact m-1 text-light mt-5">
+    <div class="container">
+      <a class="link-underline-danger"><h2 id="contact-me" class="text-center head text-light">Hire Me</h2></a>
+      <div class="row contact-container">
+        <div class="col mt-2">
+          <img src="among-us-1-removebg-preview.png" alt="hire-me-pic" id="hire-me-pic">
+        </div>
+        <div class="col mt-3 p-2">
+          <form>
+            <div class="mb-3 fs-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" aria-label="First name" required>
+              </div>
+              <div class="mb-3 fs-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="your email" required>
+              </div>
+              <div class="mb-3 fs-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+                <textarea class="form-control" id="message" placeholder="your message for me" rows="3"></textarea>
+              </div>
+              <button type="submit" onclick="sendMail()" class="btn btn-outline-light">Submit</button>
+          </form>         
+        </div>
+      </div>
+    </div>    
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer text-light text-center bg-dark mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-2">
+          <ul class="list-unstyled d-flex align-items-center justify-content-center">
+            <a href="https://github.com/Ayush741-1" target="_blank"><li><img src="github.png" class="rounded-circle img-fluid mx-3 footer-img" alt="github"></li></a>
+            <a href="https://www.linkedin.com/in/ayush-sharma-80a431178/" target="_blank"><li><img src="linkedin.png" class="rounded-circle img-fluid mx-3 footer-img" alt="linkedin"></li></a>
+          </ul>
+        </div>
+        <div class="col mt-4">
+          <a class="navbar-brand" href="#home">
+            <img src="logo.png" alt="Logo" width="50" height="44" class="d-inline-flex align-text-center">
+            <span>Ayush.Sharma</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>   
+    <!-- EmailJs Scripts -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("Ko3EUWB8r77dTrriz");
+      })();
+    </script>
+</body>
+</html>
