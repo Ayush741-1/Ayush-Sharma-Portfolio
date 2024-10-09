@@ -1,6 +1,6 @@
 // text animation typed.js
 let typed = new Typed('#element', {
-    strings: ['Cloud Engineer', 'AI/ML Innovator'],
+    strings: ['AI/ML Innovator','Cloud Engineer'],
     typeSpeed: 50,
   });
 
